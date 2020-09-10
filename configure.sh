@@ -28,7 +28,11 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "disableInsecureEncryption": true
             },
             "streamSettings": {
-                "network": "ws"
+                "network": "ws",
+                "security": "tls",
+                "wsSettings": {
+                     "path": "/mypro"
+                 }
             }
         }
     ],
